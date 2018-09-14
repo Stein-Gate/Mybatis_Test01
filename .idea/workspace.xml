@@ -28,6 +28,7 @@
     <session id="767817841">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -162,7 +163,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536916535652" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536916682602" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -192,16 +193,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536903423097</updated>
-      <workItem from="1536903438035" duration="7429000" />
+      <workItem from="1536903438035" duration="7648000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7429000" />
+    <option name="totallyTimeSpent" value="7648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Web" side_tool="true" />
       <window_info id="JRebel" side_tool="true" />
