@@ -14,6 +14,11 @@ import java.util.List;
 
 public class UserDaoImpl implements UserDao {
 
+    /**
+     * 显示所有用户
+     * @return List<User>
+     * @throws Exception
+     */
     @Override
     public List<User> findAllUsers() throws Exception {
         List<User> list = null;
@@ -32,11 +37,34 @@ public class UserDaoImpl implements UserDao {
         return list;
     }
 
+    /**
+     * 根据用户ID查找用户
+     * @param id
+     * @return User
+     * @throws Exception
+     */
     @Override
     public User findUserByID(int id) throws Exception {
-        return null;
+        User user = null;
+        SqlSession session = DBToolsUtil.getSession();
+        UserDao dao = session.getMapper(UserDao.class);
+        try {
+            user = dao.findUserByID(id);
+            session.commit();
+        }catch (Exception e){
+            e.printStackTrace();
+            session.rollback();
+        }finally {
+            session.close();
+        }
+        return user;
     }
 
+    /**
+     * 插入用户
+     * @param user
+     * @throws Exception
+     */
     @Override
     public void insertUser(User user) throws Exception {
         SqlSession session = DBToolsUtil.getSession();
@@ -52,8 +80,31 @@ public class UserDaoImpl implements UserDao {
         }
     }
 
+    /**
+     * 删除用户
+     * @param id
+     * @throws Exception
+     */
     @Override
-    public void deleteUser(User user) throws Exception {
+    public void deleteUser(int id) throws Exception {
+        SqlSession session = DBToolsUtil.getSession();
+        UserDao dao = session.getMapper(UserDao.class);
+        try {
+            dao.deleteUser(id);
+            session.commit();
+            System.out.println("删除成功");
+        }catch (Exception e){
+            e.printStackTrace();
+            System.out.println("删除失败");
+            session.rollback();
+        }finally {
+            session.close();
+        }
+    }
 
+    @Override
+    public boolean updateUser(User user, int id) throws Exception {
+
+        return false;
     }
 }

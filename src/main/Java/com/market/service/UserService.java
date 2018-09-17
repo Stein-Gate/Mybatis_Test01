@@ -8,20 +8,26 @@ import java.util.List;
 public class UserService {
     public static void main(String args[]){
         UserDaoImpl daoImpl = new UserDaoImpl();
-        try {
-            List<User> list = daoImpl.findAllUsers();
-            if (list == null){
-                System.out.println("用户为空");
-            }else {
-                for (User user:list) {
-                    System.out.println(user.toString());
-                }
-                System.out.println(list.size());
-            }
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
+        /**
+         * 查询所有的用户
+         */
+//        try {
+//            List<User> list = daoImpl.findAllUsers();
+//            if (list == null){
+//                System.out.println("用户为空");
+//            }else {
+//                for (User user:list) {
+//                    System.out.println(user.toString());
+//                }
+//                System.out.println(list.size());
+//            }
+//        }
+//        catch (Exception e){
+//            e.printStackTrace();
+//        }
+        /**
+         * 插入用户
+         */
 
 //        User user = new User("Lulu",22,"Taizhou");
 //        try {
@@ -29,5 +35,17 @@ public class UserService {
 //        }catch (Exception e){
 //            e.printStackTrace();
 //        }
+        /**
+         * 查询单个用户
+         */
+        User user = null;
+        try {
+            user = daoImpl.findUserByID(2);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        System.out.println(user.toString());
+
+
     }
 }

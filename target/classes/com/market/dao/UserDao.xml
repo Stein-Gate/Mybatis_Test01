@@ -16,7 +16,7 @@
     </select>
 
     <!-- 根据用户ID查找用户 -->
-    <select id="findByID" resultMap="userMap">
+    <select id="findUserByID" parameterType="int" resultMap="userMap">
       select * from user where Id = #{id}
     </select>
 
@@ -26,7 +26,10 @@
     </insert>
 
     <!-- 删除用户 -->
-    <delete id="deleteUser">
+    <delete id="deleteUser" parameterType="int">
         delete from user where Id = #{id}
     </delete>
+
+    <!-- 更新用户 -->
+
 </mapper>

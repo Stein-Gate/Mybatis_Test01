@@ -15,5 +15,10 @@ public interface UserDao {
     public void insertUser(User user) throws Exception;
 
     //删除用户
-    public void deleteUser(User user) throws Exception;
+    public void deleteUser(int id) throws Exception;
+
+    //更新用户
+    public boolean updateUser(User user,int id) throws Exception;
+
+    //查找最顶尖的五个用户
 }
