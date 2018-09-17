@@ -14,6 +14,7 @@ import java.util.List;
 
 public class UserDaoImpl implements UserDao {
 
+    @Override
     public List<User> findAllUsers() throws Exception {
         List<User> list = null;
         SqlSession session = DBToolsUtil.getSession();
@@ -29,5 +30,30 @@ public class UserDaoImpl implements UserDao {
             session.close();
         }
         return list;
+    }
+
+    @Override
+    public User findUserByID(int id) throws Exception {
+        return null;
+    }
+
+    @Override
+    public void insertUser(User user) throws Exception {
+        SqlSession session = DBToolsUtil.getSession();
+        UserDao dao = session.getMapper(UserDao.class);
+        try {
+            dao.insertUser(user);
+            session.commit();
+        }catch (Exception e){
+            e.printStackTrace();
+            session.rollback();
+        }finally {
+            session.close();
+        }
+    }
+
+    @Override
+    public void deleteUser(User user) throws Exception {
+
     }
 }
