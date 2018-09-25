@@ -31,5 +31,7 @@
     </delete>
 
     <!-- 更新用户 -->
-
+    <update id="updateUser">
+        update user set name=#{name},age=#{age},city=#{city} where Id=#{id}
+    </update>
 </mapper>

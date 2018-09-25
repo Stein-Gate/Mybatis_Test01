@@ -38,14 +38,24 @@ public class UserService {
         /**
          * 查询单个用户
          */
-        User user = null;
+//        User user = null;
+//        try {
+//            user = daoImpl.findUserByID(2);
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
+//        System.out.println(user.toString());
+
+        /**
+         * 更新用户信息
+         */
+
+        User user = new User("Image",25,"Wenzhou");
         try {
-            user = daoImpl.findUserByID(2);
+            Boolean isSuccess = daoImpl.updateUser(user,2);
         }catch (Exception e){
             e.printStackTrace();
         }
-        System.out.println(user.toString());
-
 
     }
 }
