@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcaef000-920f-4c8a-bf6f-668c199a1b69" name="Default Changelist" comment="">
-<<<<<<< HEAD
+<HEAD>
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
       <change afterPath="$PROJECT_DIR$/src/main/Java/com/market/util/RedisUtil.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/redis.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -16,7 +15,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis_config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/market/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/market/dao/UserDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/mybatis_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis_config.xml" afterDir="false" />
->>>>>>> 2ab48c228eee64aac8a098ee1f7f64a524590cdb
+</HEAD>
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -161,13 +160,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Java/com/market/dao/UserDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
+<HEAD>
             <state relative-caret-position="345">
               <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-=======
             <state relative-caret-position="293">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
->>>>>>> 2ab48c228eee64aac8a098ee1f7f64a524590cdb
+
             </state>
           </provider>
         </entry>
