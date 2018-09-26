@@ -102,30 +102,8 @@ public class UserDaoImpl implements UserDao {
         }
     }
 
-    /**
-     * 更新用户
-     * @param user
-     * @param id
-     * @return
-     * @throws Exception
-     */
     @Override
     public boolean updateUser(User user, int id) throws Exception {
-        Boolean isSuccess = false;
-        SqlSession session = DBToolsUtil.getSession();
-        UserDao dao = session.getMapper(UserDao.class);
-        try {
-            dao.updateUser(user,id);
-            session.commit();
-            System.out.println("更新失败");
-            isSuccess = true;
-        }catch (Exception e){
-            e.printStackTrace();
-            System.out.println("更新成功");
-            session.rollback();
-        }finally {
-            session.close();
-        }
 
         return false;
     }

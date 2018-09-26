@@ -11,7 +11,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_10" default="false" project-jdk-name="10" project-jdk-type="JavaSDK">
+=======
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" project-jdk-name="10" project-jdk-type="JavaSDK">
+>>>>>>> parent of 2ab48c2... +Spring
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
