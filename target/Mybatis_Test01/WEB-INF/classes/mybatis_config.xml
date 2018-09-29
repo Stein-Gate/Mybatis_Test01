@@ -23,13 +23,6 @@
         </environment>
     </environments>
 
-    <!-- 数据库厂商标识 -->
-    <!-- 为了今后在多个数据库之间进行切换 -->
-    <databaseIdProvider type="DB_VENDOR">
-        <property name="MySQL" value="mysql"/>
-        <property name="Oracle" value="oracle"/>
-    </databaseIdProvider>
-
     <!-- 类的对应映射 -->
     <mappers>
         <!-- 自动扫描包内部的相关映射 -->
